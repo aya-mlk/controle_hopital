@@ -25,10 +25,10 @@ public class HopitalWebApplication {
     //@Bean
     CommandLineRunner commandLineRunner(PatientRepository patientRepository){
         return args -> {
-            patientRepository.save(new Patient(null,"Hassan", new Date(), false,32));
+            patientRepository.save(new Patient(null,"Nouha", new Date(), false,32));
             patientRepository.save(new Patient(null,"Mohammed", new Date(), true,321));
-            patientRepository.save(new Patient(null,"Aliii", new Date(), true,65));
-            patientRepository.save(new Patient(null,"Anas", new Date(), false,32));
+            patientRepository.save(new Patient(null,"Ayaa", new Date(), true,65));
+            patientRepository.save(new Patient(null,"Lina", new Date(), false,32));
 
             patientRepository.findAll().forEach(p->{
                 System.out.println(p.getNom());

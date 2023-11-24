@@ -22,10 +22,8 @@ import javax.sql.DataSource;
 @EnableMethodSecurity(prePostEnabled = true)
 @AllArgsConstructor
 public class SecurityConfig {
-
     private PasswordEncoder passwordEncoder;
     private UserDetailServiceImpl userDetailServiceImpl;
-
 
 
     //@Bean
